@@ -1,3 +1,5 @@
 steps:
 - name: 'ubuntu'
   args: ['echo', 'hello worlddd']
+- name: 'ubuntu2'
+  args: ['cat', 'cloudbuild.yaml']
