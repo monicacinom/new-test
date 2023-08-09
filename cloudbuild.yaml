@@ -1,5 +1,6 @@
 steps:
-- name: 'ubuntu'
-  args: ['echo', 'hello worlddd']
-- name: 'ubuntu2'
-  args: ['cat', 'cloudbuild.yaml']
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'tag', 'hello-world', 'us-central1-docker.pkg.dev/argo-local-khalk/khalk-ghe-ar/artifact-name']
+images: ['us-central1-docker.pkg.dev/argo-local-khalk/khalk-ghe-ar/artifact-name']
+options:
+  requestedVerifyOption: VERIFIED
